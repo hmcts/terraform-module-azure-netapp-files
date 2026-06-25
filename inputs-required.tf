@@ -8,16 +8,7 @@ variable "common_tags" {
   type        = map(string)
 }
 
-variable "product" {
-  description = "https://hmcts.github.io/glossary/#product"
-  type        = string
-}
-
-variable "project" {
-  description = "Project name - sds or cft."
-}
-
-variable "component" {
-  description = "https://hmcts.github.io/glossary/#component"
+variable "subnet_id" {
+  description = "ID of the delegated subnet for Azure NetApp Files (must have Microsoft.NetApp/volumes delegation). The subnet must already exist; this module does not create it."
   type        = string
 }

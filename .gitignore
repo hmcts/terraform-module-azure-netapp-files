@@ -34,3 +34,9 @@ override.tf.json
 
 # Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
 *tfplan*
+
+
+# APM dependencies
+apm_modules/
+.agents/
+apm.*
